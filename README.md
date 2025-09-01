@@ -17,7 +17,7 @@ This project integrates a FastAPI backend with a book recommendation system (RAG
 
 ## Project Structure
 - `backend/` - FastAPI backend code, RAG modules, hate speech, book summary, ChromaDB
-- `frontend/` - Web interface (if present)
+- `frontend/` - Web interface built with React
 - `hate_speech/` - Training/testing scripts and data for the hate speech model
 - `book_summaries.txt` - Book summaries database
 
