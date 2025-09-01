@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proiect LLM - Book Recommendation & Hate Speech Detection
 
 ## Descriere
@@ -42,3 +43,6 @@ Acest proiect integrează un backend FastAPI cu un sistem de recomandare de căr
 - Dacă textul introdus de utilizator este ofensator, nu se face recomandare
 - Modelele `.pkl` și baza ChromaDB nu sunt incluse dacă sunt prea mari; folosește scripturile de generare
 - Cheile API OpenAI trebuie setate ca variabile de mediu
+=======
+# LLM
+>>>>>>> 0e35a9f7b2f106794b9685bdb81ce13b8126b6bb
