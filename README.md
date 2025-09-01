@@ -35,6 +35,8 @@ This project integrates a FastAPI backend with a book recommendation system (RAG
    npm install
    npm run dev
    ```
+6. In the frontend, enter your command or question in the designated text box, or activate audio mode to speak your query.
+7. To generate an image or transform the result into audio, use the specific buttons available in the interface.
 
 ## Additional Details
 - Book recommendations are made only from titles present in the database context
