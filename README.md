@@ -29,7 +29,7 @@ This project integrates a FastAPI backend with a book recommendation system (RAG
    ```
    uvicorn backend.fastapi_app:app
    ```
-5. (Optional) Start the frontend:
+5. Start the frontend:
    ```
    cd frontend
    npm install
