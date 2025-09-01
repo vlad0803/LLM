@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+joblib
+nltk
+langchain
+langchain-openai
+langchain-chroma
+langchain-core
+langchain-community
+scikit-learn
+sklearn
+pydub
+openai
+pandas
+matplotlib
+seaborn

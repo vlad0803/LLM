@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.sqlite3
+*.bin
+*.db
+*.egg-info/
+.env
+*.local
+
+# Node.js / Frontend
+node_modules/
+dist/
+build/
+*.log
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+*.bak
+*.swp
