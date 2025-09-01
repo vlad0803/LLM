@@ -1,4 +1,4 @@
-# LLM - Book Recommendation & Hate Speech Detection
+# LLM - Book Recommendation
 
 ## Description
 This project integrates a FastAPI backend with a book recommendation system (RAG - Retrieval Augmented Generation), a hate speech detection module, and uses OpenAI LLM (ChatOpenAI) for generating answers and orchestrating tools.
