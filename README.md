@@ -1,47 +1,44 @@
-# Proiect LLM - Book Recommendation & Hate Speech Detection
+# LLM - Book Recommendation & Hate Speech Detection
 
-## Descriere
-Acest proiect integrează un backend FastAPI cu un sistem de recomandare de cărți (RAG - Retrieval Augmented Generation) și un modul de detecție hate speech.
+## Description
+This project integrates a FastAPI backend with a book recommendation system (RAG - Retrieval Augmented Generation) and a hate speech detection module.
 
-### Funcționalități principale
-- **Recomandare de cărți:**
-  - Folosește ChromaDB și embeddings OpenAI pentru a găsi cărți relevante pe baza întrebării utilizatorului.
-  - Recomandarea se face doar din titlurile prezente în contextul bazei de date.
-  - Pentru fiecare titlu recomandat, se afișează sumarul complet.
-- **Detecție hate speech:**
-  - Textul introdus de utilizator este procesat și clasificat (model RandomForest + vectorizer).
-  - Dacă textul este ofensator, nu se face recomandare.
-- **Alte funcții:**
-  - Generare imagine cu DALL-E
-  - Text-to-speech și speech-to-text cu OpenAI
+### Main Features
+- **Book Recommendation:**
+  - Uses ChromaDB and OpenAI embeddings to find relevant books based on user queries.
+  - Recommendations are made only from titles present in the database context.
+  - For each recommended title, the full summary is displayed.
+- **Hate Speech Detection:**
+  - User input is processed and classified (RandomForest model + vectorizer).
+  - If the text is offensive, no recommendation is made.
+- **Other Functions:**
+  - Image generation with DALL-E
+  - Text-to-speech and speech-to-text with OpenAI
 
-## Structură proiect
-- `backend/` - Codul backend FastAPI, modulele de RAG, hate speech, sumar cărți, ChromaDB
-- `frontend/` - Interfață web (dacă există)
-- `hate_speech/` - Scripturi de antrenare/testare și date pentru modelul hate speech
-- `book_summaries.txt` - Baza de date cu rezumate de cărți
+## Project Structure
+- `backend/` - FastAPI backend code, RAG modules, hate speech, book summary, ChromaDB
+- `frontend/` - Web interface (if present)
+- `hate_speech/` - Training/testing scripts and data for the hate speech model
+- `book_summaries.txt` - Book summaries database
 
-## Pași de build și rulare
-1. Instalează dependențele din `requirements.txt` (Python) și `package.json` (frontend)
-2. Rulează scriptul de antrenare pentru hate speech (`train_hate.py`) dacă nu există modelele
-3. Inițializează vector store-ul cu `chroma.py` (creează ChromaDB din `book_summaries.txt`)
-4. Pornește backend-ul cu:
+## Build & Run Steps
+1. Install dependencies from `requirements.txt` (Python) and `package.json` (frontend)
+2. Run the training script for hate speech (`train_hate.py`) if models do not exist
+3. Initialize the vector store with `chroma.py` (creates ChromaDB from `book_summaries.txt`)
+4. Start the backend:
    ```
    uvicorn backend.fastapi_app:app
    ```
-5. (Opțional) Pornește frontend-ul cu:
+5. (Optional) Start the frontend:
    ```
    cd frontend
    npm install
    npm run dev
    ```
 
-## Detalii suplimentare
-- Recomandarea de carte se face doar din titlurile prezente în contextul bazei de date
-- Tool-ul `get_summary_by_title()` este folosit automat de LLM pentru a afișa sumarul complet
-- Dacă textul introdus de utilizator este ofensator, nu se face recomandare
-- Modelele `.pkl` și baza ChromaDB nu sunt incluse dacă sunt prea mari; folosește scripturile de generare
-- Cheile API OpenAI trebuie setate ca variabile de mediu
-=======
-# LLM
->>>>>>> 0e35a9f7b2f106794b9685bdb81ce13b8126b6bb
+## Additional Details
+- Book recommendations are made only from titles present in the database context
+- The tool `get_summary_by_title()` is automatically used by the LLM to display the full summary
+- If the user input is offensive, no recommendation is made
+- `.pkl` models and ChromaDB database are not included if too large; use the provided scripts to generate them
+- OpenAI API keys must be set as environment variables
