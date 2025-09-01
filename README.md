@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Proiect LLM - Book Recommendation & Hate Speech Detection
 
 ## Descriere
